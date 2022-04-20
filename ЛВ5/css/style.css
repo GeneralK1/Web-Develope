@@ -1,0 +1,129 @@
+.text
+{
+    font-family: 'Roboto Condensed';
+}
+
+.pink
+{
+    color: #EE58B6;
+}
+
+.header__list
+{
+    list-style-type: none;
+    font: 500 16px 'Montserrat';
+    color: #000;
+}
+
+.button
+{
+    height: 55px;    
+    background: #05090C;
+    box-sizing: border-box;
+    border-radius: 4.59px;
+    color:#fff;
+    font: 600 16px 'Montserrat';
+}
+
+.button__short
+{
+    padding: 19px 40px;
+    width: 247px;
+}
+
+.button__long
+{
+    padding: 19px 82.5px;
+    width: 332px;
+}
+
+.top
+{
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.top__title
+{
+    font: 600 100px/1.22 'Montserrat';
+    color: #000;
+}
+
+.top__img
+{
+    height: 636.87px;
+    width: 762px;
+}
+
+.features
+{
+    background: #000;
+    color:#fff;
+}
+
+.features__description
+{
+    font: 400 22px/1.2 'Roboto Condensed';
+    text-align: center;
+}
+
+.features__first-block
+{
+    width: 286px;
+    height: 145px;
+}
+
+.features__second-block
+{
+    width: 337px;
+    height: 132px;
+}
+
+.features__third-block
+{
+    width: 293px;
+    height: 138px;
+}
+
+.reasoning
+{
+    font-size: 18px;
+    line-height: 135%;
+}
+.reasoning__heading
+{
+    font: 500 48px/1.26 'Montserrat';
+}
+
+.reasoning__first-block_text
+{
+    width: 574px;
+    height: 135px;
+}
+
+.reasoning__second-block_text
+{
+    width: 574px;
+    height: 131px;
+}
+
+.description__heading
+{
+    font: 500 48px/59px 'Montserrat', sans-serif;
+}
+
+.description__block
+{
+    width: 358px;
+    height: 190px;
+    border-radius: 7.36px;
+    background-color: #000;
+    color: #fff;
+    font: 400 18px 'Roboto Condensed'
+}
+
+.footer
+{
+    background-color: #000;
+    height: 108px;
+}
