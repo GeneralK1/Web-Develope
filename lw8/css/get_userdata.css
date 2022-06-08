@@ -1,0 +1,61 @@
+.get-file
+{
+   margin-top: 52px;
+   margin-left: 51px;
+}
+
+.get-file__enter-email
+{
+   margin-right: 49px;
+   width: 480px;
+   height: 64px;
+   box-sizing: border-box;
+   font: 500 18px 'Montserrat', sans-serif;
+   padding-left: 27px;
+   color: #999;
+   border: 1.35px solid #c0c0c0;
+   border-radius: 4px;
+   outline: none;
+}
+
+.get-file__enter-email::placeholder 
+{
+   color: #999;
+}
+
+.get-file__enter-email:focus 
+{
+   border: 1.35px solid #000;
+}
+
+.get-file__button
+{
+   width: 480px;
+   height: 64px;
+   box-sizing: border-box;
+   font: 500 18px 'Montserrat', sans-serif;
+   color: #fff;
+   background-color: #000;
+   border: 1px solid #000;
+   border-radius: 5.3px;
+}
+
+.get-file__button:hover 
+{
+   border: 1px solid #d647a2;
+   background-color: #d647a2;
+}
+
+.userdata-text
+{
+   font: 400 18px/1 "Roboto Condensed";
+   margin-left: 11px;
+   margin-top: 72px;
+   list-style: none;
+}
+.userdata-error__title
+{
+   font: 400 18px/24.3px "Roboto Condensed";
+   margin-left: 51px;
+   margin-top: 68px;
+}
