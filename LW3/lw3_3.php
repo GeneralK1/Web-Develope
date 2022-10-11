@@ -1,57 +1,63 @@
 <?php
-header("Content-Type: text/plain");
+
+$_SERVER['QUERY_STRING'];
 $password = $_GET['password'];
 $length = strlen($password);
 
 if (!(ctype_alnum($password)))
 {
-    echo "It is not a password.";
-} 
-else 
+        echo "The string $password is not a password";
+} else 
 {
-    $strength += 4 * $length;
-
-    for ($i = 0; $i < $length; $i++)
-    {
-        if (is_numeric($password[$i]))
-            $count++;
-    }
-    $strength += $count * 4;
-    $count = 0;
-
-    for ($i = 0; $i < $length; $i++)
-    {
-        if (ctype_upper($password[$i]))
-            $count++;
-    }
-
-    if ($count != 0)
-        $strength += ($length - $count) * 2;
-    $count = 0;
-
-    for ($i = 0; $i < $length; $i++)
-    {
-        if (ctype_lower($password[$i]))
-            $count++;
-    }
-    if ($count != 0)
-        $strength += ($length - $count) * 2;
-    $count = 0;
-
-    if (ctype_alpha($password))
-        $strength -= $length;
-    if (ctype_digit($password))
-        $strength -= $length;
-
-    $pairs = count_chars($password);
-
-
-    foreach ($pairs as $value) 
-    {
-        if ($val > 1) 
-        {
-            $strength -= $value;
-        }
-    }	
-    echo 'Password Strength: ' . $strength;
+	$safety += 4 * $length;
+	for ($i = 0; $i < $length; $i++) 
+	{
+		if (is_numeric($password[$i])) 
+		{
+			$n++;			
+		}
+	}
+	$safety += $n * 4;
+	$n = 0;
+	for ($i = 0; $i < $length; $i++) 
+	{
+		if (ctype_upper($password[$i])) 
+		{
+			$n++;			
+		}
+	}
+	if ($n != 0) 
+	{
+		$safety += ($length - $n) * 2;
+	}
+	$n = 0;
+	for ($i = 0; $i < $length; $i++) 
+	{
+		if (ctype_lower($password[$i])) 
+		{
+			$n++;	
+		}
+	}
+	if ($n != 0) 
+	{
+		$safety += ($length - $n) * 2;
+	}
+	$n = 0;
+	if (ctype_alpha($password)) 
+	{
+		$safety -= $length;			
+	}
+	if (ctype_digit($password)) 
+	{
+		$safety -= $length;			
+	}
+	$result = count_chars($password);
+	foreach ($result as $val) 
+	{
+		if ($val > 1) 
+		{
+			$safety -= $val;
+		}
+	}	
+	echo "The safety of your password is $safety";
 }		
